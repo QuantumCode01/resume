@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="text-center mt-5">
+  <img src="{% static 'core/images/profile2.jpg' %}" alt="Profile" class="extra-div img-fluid img-thumbnail" width='250px' height='200px'>
+</div>
+<div class="extra-div mt-5 text-white mx-5 text-justify">
+    <h2 class=" font-weight-bold st ">Hello,</h2>
+     <div class="px-4" style='line-height:2rem;'>
+      <p style="text-indent:100px">I am <b class="text-primary">Saurabh Singh.</b>
+         I have completed my B.tech in Mechanical Engineering.
+        I have 1 year of experience in online tutor.
+       I am looking for a role as a software developer. I have done certification course from Udemy in
+       <b class="text-primary">Python and Django.
+       </b> I have made some projects to improove my coding skills. In this position , I have led web
+    development projects for clients in diverse industries including technology,manufacturing,pharmaceutical ,
+    hospitality , retail and financial services</p> <p class="text-justify"> Lorem , ipsum dolor sit amet consectetur adipisicing elit .
+      Eveniet sapiente reiciendis numquam optio ? Enim eligendi quae
+      ducimus ipsam consectetur dicta veritatis sunt . Pariatur velmodi alias eum ducimus nam temporibus.</p>
+     </div>
+    </div>
+  <div class="text-center">
+    <a style ="margin-right: 20px" href="{% url 'contact' %}" class="btn btn-outline-success my-3 mr-5">Hire Me</a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-primary my-3">Contacts</a>
+  </div>
+
+
+
+ {% endblock content %}

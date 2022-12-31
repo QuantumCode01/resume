@@ -1,0 +1,82 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<div class="container px-5">
+  <h1 class="pb-1 mt-5  border-bottom title">Contact Us</h1>
+  <p class="mt-5 mb-5 mx-5 text-white">Do you have any questions ? Please do not hesitate to contact . I will come back to you within a matter of hours to help you .
+</p>
+<div class="row">
+
+<form>
+     <div class="row text-white mt-2">
+
+       <div class="col-sm-4">
+           <div class="mb-3">
+              <label for="inputname" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="inputname">
+           </div>
+      </div>
+
+        <div class="col-sm-4">
+           <div class="mb-3">
+             <label for="emailid" class="form-label">Your Email</label>
+             <input type="email" class="form-control" id="emailid" aria-describedby="emailHelp">
+             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+        </div>
+
+        <div  class="icon-color col-sm-3 text-center">
+          <i class="fa-solid fa-location-dot fa-2x"></i>
+          <p class="text-color mt-1">Kanpur, UttarPradesh, India</p>
+        </div>
+
+   </div>
+   </form>
+
+   <form>
+        <div class="row text-white mt-2">
+
+          <div class="col-sm-8">
+              <div class="mb-3">
+                 <label for="yoursubject" class="form-label">Your Subject</label>
+                 <input type="text" class="form-control" id="yoursubject">
+              </div>
+         </div>
+
+          <div  class="icon-color col-sm-3 text-center">
+             <i class="fa-solid fa-phone fa-2x"></i>
+             <p class="text-color mt-1">91xxxxxxxx</p>
+           </div>
+
+      </div>
+      </form>
+
+      <form>
+
+           <div class="row text-white mt-2">
+
+             <div class="col-sm-8">
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Your Message*</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+              </div>
+            </div>
+
+             <div class="icon-color col-sm-3 text-center">
+                <i class="fa-solid fa-envelope fa-2x mt-2"></i>
+                <p class="text-color mt-1">contact@gmail.com</p>
+              </div>
+
+         </div>
+         <a href="{% url 'home' %}" type="button" class="btn btn-primary mt-2">Submit</a>
+         </form>
+
+   </div>
+
+   <div class="text-center mt-5 mb-5">
+     <a style ="margin-right: 20px" href="#"><i class="fa-brands fa-facebook"></i></a>
+     <a style ="margin-right: 20px" href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin "></i></a>
+
+   </div>
+</div>
+{% endblock content %}
